@@ -1,0 +1,9 @@
+## query
+
+CREATE TABLE saves (  
+ id INT AUTO_INCREMENT PRIMARY KEY,  
+ link VARCHAR(255) NOT NULL UNIQUE,  
+ title VARCHAR(255) NOT NULL,  
+ description TEXT,  
+ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
+);

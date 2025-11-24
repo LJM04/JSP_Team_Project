@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+    font-family: 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #03c75a;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* 검색창 */
+.search-box { margin-bottom: 20px; }
+
+.input-text {
+    width: 750px;
+    height: 75px;
+    font-size: 35px;
+    border: 3px solid #03c75a; 
+    padding-left: 10px;
+    vertical-align: middle; 
+}
+
+.btn-search {
+    width: 125px;
+    height: 81px; 
+    background-color: #03c75a;
+    color: white;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle; 
+}
+
+/* 라디오 버튼 */
+.sort-radio-area {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sort-radio-area input {
+    width: 20px;
+    height: 20px;
+}
+
+/* DB 버튼 */
+.save-area {
+    width: 95%;
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.btn-db {
+	background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 테이블 */
+.result-table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #999;
+    table-layout: fixed;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.result-table th {
+    background-color: #eee;
+    text-align: center;
+}
+
+/* ★ URL 링크 스타일  */
+.link-url {
+    color: green; 
+    text-decoration: underline; /* 밑줄 */
+    font-weight: bold;
+}
+
+/* 페이지 번호 */
+.paging-area { margin-top: 30px; margin-bottom: 50px; }
+.page-num {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+}
+.current {
+    background-color: #03c75a;
+    color: white;
+}

@@ -14,5 +14,5 @@ ALTER TABLE saves
 ADD COLUMN doc_id VARCHAR(50)  
 GENERATED ALWAYS AS (REGEXP_SUBSTR(link, 'docId=[0-9]+')) STORED;  
   
--- 유니크 조건 추가 (중복 차단)
+-- 유니크 조건 추가 (중복 차단)  
 ALTER TABLE saves ADD UNIQUE (doc_id);  

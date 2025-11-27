@@ -40,7 +40,7 @@
         conn = DriverManager.getConnection(dbUrl, dbId, dbPw);
 
         // 3. 쿼리 준비
-        String sql = "INSERT INTO saves (link, title, description) VALUES (?, ?, ?)";
+        String sql = "INSERT IGNORE INTO saves (link, title, description) VALUES (?, ?, ?)";
         pstmt = conn.prepareStatement(sql);
 
         // 4. 데이터 바인딩 및 배치 추가
